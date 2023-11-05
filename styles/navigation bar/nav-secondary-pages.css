@@ -1,0 +1,40 @@
+/*Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+header a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px;
+}
+
+header a:hover {
+  background-color: rgb(200, 0, 0);
+}
+
+/*Home button*/
+header nav1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav1 a {
+  font-weight: bold;
+}
+
+/*Back button*/
+header nav2 {
+  display: flex;
+}
+
+header nav2 a{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.fa-chevron-left {
+  padding: 0px 20px;
+}

@@ -1,0 +1,129 @@
+/*Margin bottom*/
+main {
+  margin-bottom: 150px;
+}
+
+/*Title and comment*/
+.title-box {
+  margin: 50px 50px 0px 50px;
+  outline: 1px black solid;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fat-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.comment {
+  color: gray;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/*Container for main boxes*/
+.wrapper {
+  margin: 30px 50px 30px 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+/*Title and definition*/
+.component-title-box {
+  padding: 20px;
+  outline: 1px black solid;
+}
+
+.component-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.component-thin-title {
+  font-size: 18px;
+}
+
+.component-definition {
+  color: gray;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/*Container in main container for the text and picture*/
+.grid {
+  outline: 1px black solid;
+  display: grid;
+  grid-template-areas: 
+  "info pic";
+  grid-template-columns: 5fr 4fr;
+}
+
+/*Content in the secondary container*/
+.text-box {
+  margin: 20px;
+  grid-area: info;
+}
+
+.text-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.pic {
+  grid-area: pic;
+  outline: 1px black solid;
+}
+
+
+/*The different pictures*/
+.pic1 {
+  background: url(../../pictures/component_pages/other_page/network-card.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.pic2 {
+  background: url(../../pictures/component_pages/other_page/psu.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.pic3 {
+  background: url(../../pictures/component_pages/other_page/fans.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/*0px - 900px*/
+@media (max-width: 899px) {
+  main {
+    margin-bottom: 100px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "pic"
+    "info";
+  }
+
+  .pic {
+    height: 300px;
+  }
+
+  .title-box {
+  margin: 30px 30px 0px 30px;
+  }
+
+  .wrapper {
+  margin: 30px 30px 50px 30px;
+}
+}

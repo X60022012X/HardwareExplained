@@ -1,0 +1,149 @@
+/*Title and definition*/
+.title-box {
+  margin: 40px 50px 0px 50px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.definition {
+  color: gray;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/*Container for text and pictures*/
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    "info1 pic1"
+    "info2 pic2"
+    "button .";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 30px 50px 100px 50px;  
+}
+
+/*Styling for text an pictures*/
+.grid {
+  border: 1px solid black;
+}
+
+.textbox {
+  line-height: 1.5;
+}
+
+.text {
+  padding: 30px;
+}
+
+/*Textbox 1*/
+.info1 {
+  grid-area: info1;
+}
+
+.title-text {
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+
+/*Picture 1*/
+.pic1 {
+  grid-area: pic1;
+  background: url(../../pictures/index_page/inside-computer-1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Textbox 2*/
+.info2 {
+  grid-area: info2;
+}
+
+/*Picture 2*/
+.pic2 {
+  grid-area: pic2;
+  background: url(../../pictures/index_page/inside-computer-2.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Button box*/
+.button{
+  grid-area: button;
+  padding: 25px 30px;
+}
+
+.button-box-text {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: black;
+}
+
+/*Screen under 600px*/
+@media (max-width: 799px) {
+  .wrapper {
+    grid-template-areas: 
+      "info1 info1"
+      "pic1 pic1"
+      "info2 info2"
+      "pic2 pic2"
+      "button button";
+  }
+
+  .pic1, .pic2 {
+    height: 300px;
+  }
+
+  .title-box {
+    margin: 30px 30px 0px 30px;
+  }
+
+  .wrapper {
+    margin: 30px 30px 30px 30px;  
+  }
+
+  .text {
+    padding: 20px;
+  }
+}
+
+/*Screen between 800px and 1000px*/
+@media (min-width: 800px) and (max-width: 999px) {
+  .wrapper {
+    grid-template-areas: 
+      "info1 info1"
+      "pic1 pic2"
+      "info2 info2"
+      "button button";
+  }
+
+  .pic1, .pic2 {
+    height: 300px;
+  }
+
+  .title-box {
+    margin: 40px 40px 0px 40px;
+  }
+
+  .wrapper {
+    margin: 30px 40px 50px 40px;  
+  }
+
+  .text {
+    padding: 20px;
+  }
+}

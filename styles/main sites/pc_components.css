@@ -1,0 +1,78 @@
+/*Container for component boxes*/
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin: 40px 40px 250px 40px;
+}
+
+/*Container for components*/
+article {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Component pictures*/
+img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Component description*/
+.text {
+  font-size: 17px;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid black;
+  color: black;
+}
+
+/*Removing link styling*/
+a {
+  text-decoration: none;
+}
+
+/*Screen under 450px*/
+@media (max-width: 449px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    font-size: 22px;
+  }
+}
+
+/*Screen betweem 450px and 600px*/
+@media (min-width: 450px) and (max-width: 599px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 30px 300px 30px;
+  }
+
+  .text {
+    font-size: 19px;
+  }
+}
+
+/*Screen over 1000px*/
+@media (min-width: 1000px) {
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 30px 60px 30px;
+  }
+
+  article {
+    height: 317px;
+    align-items: center;
+  }
+
+  img {
+    width: 253px;
+  }
+}

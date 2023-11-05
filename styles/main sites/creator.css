@@ -1,0 +1,177 @@
+/*Class for redacted text*/
+.redacted {
+  font-family: Redacted;
+}
+
+/*Page title*/
+.the-fonders {
+  text-decoration: none;
+  font-size: 32px;
+  padding: 35px 50px 0px 50px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Container for each fonder*/
+.wrapper {
+  display: grid;
+  width: 100%;
+  padding: 50px 50px 150px 50px;
+  grid-template-areas:
+    "info pic role";
+  grid-template-columns: 8fr 2.4fr 1.7fr;
+  grid-gap: 1px;
+}
+
+/*Top fonder*/
+.wrapper1 {
+  padding: 25px 50px 0px 50px;
+}
+
+/*Makes the border*/
+.box {
+  outline: 1px black solid;
+}
+
+/*INFO collums*/
+.box1 {
+  grid-area: info;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-auto-rows: 45px;
+  grid-gap: 1px;
+  outline: 1px black solid;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  align-items: center;
+  outline: 1px black solid;
+}
+
+.info > div {
+  padding: 0px 5px;
+}
+
+.info-col1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info-name {
+  background-color: #c8c8c8;
+}
+
+.info-name div {
+  font-size: 17px;
+}
+
+/*Pictures*/
+.box2-wrapper1 {
+  grid-area: pic;  
+  background: url(../../pictures/creator_page/wolf.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box2-wrapper2 {
+  grid-area: pic; 
+  background: url(../../pictures/creator_page/fox.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Roles*/
+.box3 {
+  grid-area: role;
+  padding: 15px 20px;
+}  
+
+.role-title {
+  text-decoration: underline;
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+
+.role {
+  line-height: 2;
+}
+
+/*Screen under 500px*/
+@media (max-width: 552px) {
+  .the-fonders {
+    height: 109px;
+  }
+
+  .wrapper {
+    padding: 20px 40px 100px 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "pic"
+    "info"
+    "role";
+  }
+
+  .wrapper1 {
+    padding: 20px 40px 30px 40px;
+  }
+
+  .box1 {
+    grid-template-columns:1fr;
+    grid-auto-rows: 30px;
+  }
+
+  .box2 {
+    height: 250px;
+  }
+
+  .role-grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+  }
+
+  .role1 {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  .role2 {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  .role3 {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+
+  .role4 {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+}
+
+/*Screen between 500px and 1000px*/
+@media (min-width: 553px) and (max-width: 1049px) {
+.wrapper {
+    padding: 40px 40px 100px 40px;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas:
+    "info pic"
+    "info role";
+  }
+
+  .wrapper1 {
+    padding: 20px 40px 0px 40px;
+  }
+
+  .box1 {
+    grid-template-columns:1fr; 
+    grid-auto-rows: minmax(30px, auto);
+  }
+
+  .box2 {
+    height: 170px;
+  }
+}

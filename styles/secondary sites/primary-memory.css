@@ -1,0 +1,161 @@
+/*Title and definition*/
+.title-box {
+  margin: 40px 50px 0px 50px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fat-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.thin-title {
+  font-size: 22px;
+}
+
+.defenition {
+  color: gray;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/*Container for text and picture boxes*/
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    "info1 info1 def1 def2"
+    "info2 info2 pic1 pic1"
+    "button button . .";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 30px 50px 150px 50px;  
+}
+
+/*Generel for text and picture boxes*/
+.title-text {
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+
+.grid {
+  border: 1px solid black;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.text-top {
+  margin-bottom: 30px;
+}
+
+.text {
+  padding: 30px;
+}
+
+/*Grid areas for text and picture boxes*/
+
+.info1 {
+  grid-area: info1;
+}
+
+.def1, .def2 {
+  background-color: lightgray;
+  border-radius: 40px;
+}
+
+.def1 {
+  grid-area: def1;
+}
+
+.def2 {
+  grid-area: def2;
+}
+
+.pic1 {
+  grid-area: pic1;
+  background: url(../../pictures/component_pages/primary-memory_page.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.info2 {
+  grid-area: info2;
+}
+
+.button{
+  grid-area: button;
+  padding: 25px 30px;
+  
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+}
+
+/*0px - 520px*/
+@media (max-width: 519px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "info1"
+      "def1"
+      "def2"
+      "pic1"
+      "info2"
+      "button";
+      margin: 30px 30px 100px 30px;
+
+  }
+
+  .pic1 {
+    height: 300px;
+  }
+
+  .title-box {
+    margin: 30px 30px 0px 30px;
+  }
+
+  .text {
+    padding: 20px;
+  }
+}
+
+/*520px - 1000px*/
+@media (min-width: 520px) and (max-width: 999px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "info1 info1"
+    "def1 def2"
+    "pic1 pic1"
+    "info2 info2"
+    "button button";
+      margin: 30px 40px 100px 40px;  
+  }
+
+  .pic1 {
+    height: 300px;
+  }
+
+  .title-box {
+    margin: 40px 40px 0px 40px;
+  }
+
+  .text {
+    padding: 20px;
+  }
+}
