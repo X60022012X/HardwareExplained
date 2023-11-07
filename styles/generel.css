@@ -10,3 +10,8 @@ main {
   max-width: 1200px;
   margin: auto;
 }
+
+/*Class for redacted text*/
+.redacted {
+  font-family: Redacted;
+}
