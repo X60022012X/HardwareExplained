@@ -50,7 +50,7 @@
       </div>
       <div class="grid pic2" title="Circuit Bord" alt="Picture from of a circuit bord up close"></div>
       <div class="grid text button">
-        <p class="button-box-text">
+        <p class="button-box-text textbox">
           Click here to learn more about the components that your pc consist of, and what the acronyms above means.
         </p>
         <a href="sites/main sites/pc-components.html">
@@ -70,11 +70,16 @@
       </article-footer>
 
       <article-footer class="subscribe">
-          <div>
-              <div class="title-footer">Subscribe to our Newsletter:</div>
-              <input placeholder="Your email address">
-              <button class="subscribe-button">Subscribe</button>
-          </div>
+        <div>
+          <div class="title-footer">Subscribe to our Newsletter:</div>
+          <form action="https://formsubmit.co/leo.fredenborg@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New submission from HardwareExplained!">
+            <input type="text" name="Name" placeholder="Your name..." required>
+            <input class="email" type="email" name="Email" placeholder="Your email address..." required>
+            <input type="text" name="Meassage" placeholder="Meassage..." required>
+            <button class="subscribe-button" type="submit">Subscribe</button>
+          </form>
+        </div>
       </article-footer>
 
       <article-footer class="about-us">

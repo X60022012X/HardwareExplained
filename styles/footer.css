@@ -51,8 +51,10 @@ footer * {
 input {
   border: 1.5px black solid;
   background-color: white;
-  padding: 8px 60px 8px 16px;
+  padding: 5px 0px 5px 8px;
   border-radius: 5px;
+  margin-bottom: 8px;
+  width: 100%;
 }
 
 .subscribe-button {
@@ -63,16 +65,17 @@ input {
   color: white;
   border: 1.5px black solid;
   font-weight: bold;
-  padding: 9px 6.5px;
+  width: 100%;;
+  padding: 6px 0px;
   transition: background-color 0.4s, color 0.4s;
 }
 
 .subscribe-button:hover {
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(150, 150, 150);
   color: rgb(0, 0, 0);
   border: 1.5px black solid;
-  padding: 9px 6.5px;
+  padding: 6px 6.5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -134,10 +137,6 @@ input {
   article-footer {
     padding: 30px;
     width: 100%;
-  }
-
-  input {
-    padding: 8px 30px 8px 16px;
   }
 }
 

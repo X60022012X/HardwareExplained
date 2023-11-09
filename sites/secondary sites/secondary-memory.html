@@ -129,11 +129,16 @@
       </article-footer>
 
       <article-footer class="subscribe">
-          <div>
-              <div class="title-footer">Subscribe to our Newsletter:</div>
-              <input placeholder="Your email address">
-              <button class="subscribe-button">Subscribe</button>
-          </div>
+        <div>
+          <div class="title-footer">Subscribe to our Newsletter:</div>
+          <form action="https://formsubmit.co/leo.fredenborg@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New submission from HardwareExplained!">
+            <input type="text" name="Name" placeholder="Your name..." required>
+            <input class="email" type="email" name="Email" placeholder="Your email address..." required>
+            <input type="text" name="Meassage" placeholder="Meassage..." required>
+            <button class="subscribe-button" type="submit">Subscribe</button>
+          </form>
+        </div>
       </article-footer>
 
       <article-footer class="about-us">
