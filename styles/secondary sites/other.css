@@ -1,6 +1,6 @@
 /*Margin bottom*/
 main {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 /*Title and comment*/
@@ -105,7 +105,7 @@ main {
 /*0px - 900px*/
 @media (max-width: 899px) {
   main {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .grid {

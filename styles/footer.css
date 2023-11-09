@@ -52,23 +52,28 @@ input {
   border: 1.5px black solid;
   background-color: white;
   padding: 8px 60px 8px 16px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .subscribe-button {
-  border: 1.5px black solid;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-left: 0px;
   font-size: 13px;
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(0, 0, 0);
   color: white;
+  border: 1.5px black solid;
   font-weight: bold;
-  padding: 8px 8px;
+  padding: 9px 6.5px;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .subscribe-button:hover {
-  background-color: rgb(136, 136, 136);
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+  border: 1.5px black solid;
+  padding: 9px 6.5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 /*About us section*/
@@ -112,7 +117,7 @@ input {
 /*Screen between 0px and 440px*/
 @media (max-width: 439px) {
   footer {
-    padding: 20px;
+    padding: 10px 0px;
   }
 
   section-footer {
@@ -139,7 +144,7 @@ input {
 /*Screen between 440px and 930px*/
 @media (min-width: 440px) and (max-width: 930px) {
   footer {
-    padding: 35px;
+    padding: 10px;
   }
 
   section-footer {
