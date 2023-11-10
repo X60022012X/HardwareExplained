@@ -37,6 +37,7 @@ footer * {
 /*Contact us section*/
 .contact-us {
   grid-area: contact-us;
+  margin-bottom: 40px;
 }
 
 .second-email {
@@ -67,6 +68,7 @@ input {
   font-weight: bold;
   width: 100%;;
   padding: 6px 0px;
+  margin-top: 0px;
   transition: background-color 0.4s, color 0.4s;
 }
 
@@ -87,6 +89,7 @@ input {
 /*Quick links section*/
 .quick-links {
   grid-area: quick-links;
+  margin-bottom: 30px;
 }
 
 .links {
@@ -105,6 +108,7 @@ input {
 /*Follow us section*/
 .follow-us {
   grid-area: follow-us;
+  margin-bottom: 10px;
 }
 
 .icon > img {
@@ -155,5 +159,17 @@ input {
     "quick-links"
     "contact-us"
     "follow-us";
+  }
+
+  .follow-us {
+    margin-bottom: 0px;
+  }
+
+  .quick-links {
+    margin-bottom: 0px;
+  }
+
+  .contact-us {
+    margin-bottom: 0px;
   }
 }
