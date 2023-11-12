@@ -4,7 +4,7 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 30px;
   column-gap: 30px;
-  margin: 40px 40px 250px 40px;
+  margin: 40px 40px 190px 40px;
 }
 
 /*Container for components*/
@@ -49,8 +49,8 @@ a {
   }
 }
 
-/*Screen betweem 450px and 600px*/
-@media (min-width: 450px) and (max-width: 599px) {
+/*Screen betweem 450px and 700px*/
+@media (min-width: 450px) and (max-width: 699px) {
   section {
     grid-template-columns: 1fr 1fr;
     margin: 30px 30px 300px 30px;
@@ -61,8 +61,8 @@ a {
   }
 }
 
-/*Screen over 1000px*/
-@media (min-width: 1000px) {
+/*Screen over 900px*/
+@media (min-width: 900px) {
   section {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 30px 30px 60px 30px;
