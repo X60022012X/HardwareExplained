@@ -19,15 +19,35 @@ header a:hover {
 header nav1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-header nav1 a {
-  font-weight: bold;
+header nav1:hover {
+  background-color: rgb(200, 0, 0);
+}
+
+.logo-link-container {
+  padding: 11px 8px;
+  height: 100%;
+}
+
+.logo-link {
+  padding: 0;
+  margin: 0;
+}
+
+.logo-container {
+  width: 120px;
+  aspect-ratio: 10/3;
+  background: url(../../pictures/logo.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /*PC-componets, Creator and sources button*/
 header nav2 {
   display: flex;
+  align-items: center;
 }
 
 header nav2 a{
@@ -39,12 +59,12 @@ header nav2 a{
 .fa-bars{
   color: white;
   font-size: 30px;
-  padding: 5px 20px;
+  padding: 14px 25px;
   display: none;
 }
 
 /*Screen smaller than 600px*/
-@media(max-width: 600px){
+@media(max-width: 700px){
 
   /*Header*/
   header{
@@ -70,6 +90,15 @@ header nav2 a{
     border-bottom: 1px solid gray;
   }
 
+  header nav1:hover {
+    background-color: black;
+  }
+
+
+  .logo-link-container:hover {
+    background-color: rgb(200, 0, 0);
+  }
+
   /*PC-componets, Creator and sources button*/
   header nav2 {
     display: none;
@@ -88,7 +117,7 @@ header nav2 a{
     align-items: center;
   }
 
-  .fa-bars:active {
+  .fa-bars:hover, .fa-bars:active {
     background-color: rgb(200, 0, 0);
   }
 }
