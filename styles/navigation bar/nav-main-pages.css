@@ -22,15 +22,6 @@ header nav1 {
   align-items: center;
 }
 
-header nav1:hover {
-  background-color: rgb(200, 0, 0);
-}
-
-.logo-link-container {
-  padding: 11px 8px;
-  height: 100%;
-}
-
 .logo-link {
   padding: 0;
   margin: 0;
@@ -42,6 +33,11 @@ header nav1:hover {
   background: url(../../pictures/logo.png);
   background-size: cover;
   background-position: center;
+  margin: 11px 8px;
+}
+
+.logo-container:hover {
+  background-color: rgb(200, 0, 0);
 }
 
 /*PC-componets, Creator and sources button*/
