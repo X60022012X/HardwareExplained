@@ -1,7 +1,7 @@
 /*Container for the footer*/
 footer {
   background-color: rgb(75, 75, 75);
-  color: white;
+  color: rgba(198,169,101,255);
   border-top: 2px solid black;
   padding: 50px;
 }
@@ -51,11 +51,15 @@ footer * {
 
 input {
   border: 1.5px black solid;
-  background-color: white;
+  background-color: rgba(198,169,101,255);
   padding: 5px 0px 5px 8px;
   border-radius: 5px;
   margin-bottom: 8px;
   width: 100%;
+}
+
+input::placeholder {
+  color: black;
 }
 
 .subscribe-button {
@@ -63,7 +67,7 @@ input {
   margin-left: 0px;
   font-size: 13px;
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: rgba(198,169,101,255);
   border: 1.5px black solid;
   font-weight: bold;
   width: 100%;;
@@ -74,7 +78,7 @@ input {
 
 .subscribe-button:hover {
   cursor: pointer;
-  background-color: rgb(150, 150, 150);
+  background-color: rgba(198,169,101,255);
   color: rgb(0, 0, 0);
   border: 1.5px black solid;
   padding: 6px 6.5px;
@@ -93,7 +97,7 @@ input {
 }
 
 .links {
-  color:white;
+  color: rgba(198,169,101,255);
 }
 
 .footer-list {
